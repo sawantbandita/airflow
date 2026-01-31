@@ -192,26 +192,6 @@ it will be retrieved from the Google Cloud connection used. Both variants are sh
     :start-after: [START howto_operator_gcp_bigtable_table_delete]
     :end-before: [END howto_operator_gcp_bigtable_table_delete]
 
-.. _howto/operator:BigtableTableReplicationCompletedSensor:
-
-BigtableTableReplicationCompletedSensor
----------------------------------------
-
-You can create the operator with or without project id. If project id is missing
-it will be retrieved from the Google Cloud connection used. Both variants are shown:
-
-Use the :class:`~airflow.providers.google.cloud.sensors.bigtable.BigtableTableReplicationCompletedSensor`
-to wait for the table to replicate fully.
-
-This sensor periodically checks the replication status and blocks execution
-until replication is complete. It is useful in workflows that depend on data
-being fully available across clusters.
-
-
-The same arguments apply to this sensor as the BigtableCreateTableOperator.
-
-**Note:** If the table or the Cloud Bigtable instance does not exist, this sensor waits for the table until
-timeout hits and does not raise any exception.
 
 Using the operator
 """"""""""""""""""
