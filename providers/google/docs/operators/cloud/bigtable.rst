@@ -144,7 +144,7 @@ for application data.
 
 
 If the table with given ID exists in the Cloud Bigtable instance, the operator compares the Column Families.
-If the Column Families are identical, operator succeeds. Otherwise, the operator fails with the appropriate
+If the Column Families are identical, the operator succeeds. Otherwise, the operator fails with the appropriate
 error message.
 
 
