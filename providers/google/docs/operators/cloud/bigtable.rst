@@ -31,7 +31,7 @@ BigtableCreateInstanceOperator
 ------------------------------
 
 Use the :class:`~airflow.providers.google.cloud.operators.bigtable.BigtableCreateInstanceOperator`
-to create a new Google Cloud Bigtable instance.
+to create a Google Cloud Bigtable instance.
 
 This operator provisions a Bigtable instance along with one or more clusters.
 It is typically used during environment setup or infrastructure provisioning
